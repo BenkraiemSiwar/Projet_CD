@@ -14,6 +14,7 @@ pipeline {
 	stage('build') {
 	    	       steps{
 	     		   script{
+	     		        sh "npm install --legacy-peer-deps"
 	          		sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml"
 	           }
 	        }
