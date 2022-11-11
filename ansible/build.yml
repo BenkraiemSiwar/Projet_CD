@@ -1,8 +1,7 @@
-- name : build
-  hosts : localhost
-  remote_user: ansible
-  become : yes
-  become_method: sudo
-  gather_facts : true
-  roles :
-   - { role: build }
+---
+
+     - hosts: localhost
+       gather_facts: no
+       ##become: true
+       roles:
+        - { role: build }
