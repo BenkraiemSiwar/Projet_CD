@@ -2,5 +2,7 @@
 # tasks file for build
 #buildproject
              
+             - name: install npm
+               shell: npm instal
              - name: build app
-               shell: ng build --prod
+               shell: ng build 
